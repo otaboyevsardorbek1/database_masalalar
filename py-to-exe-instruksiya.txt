@@ -1,0 +1,44 @@
+Kompyuter Dasturlari Uchun
+
+PyInstaller
+PyInstaller Python skriptlarini EXE (Windows), APP (MacOS), yoki Linux uchun ishlaydigan formatga o'zgartiradi.
+
+
+bash
+Copy code
+
+pip install pyinstaller 
+
+python -m pyinstaller --onefile myscript.py
+
+python pyinstaller.py --onefile inson_db.py
+Rasmiy hujjatlar
+ cx_Freeze 
+
+Python dasturlarini kompyuterda ishlaydigan paketlarga aylantirish uchun boshqa variant.
+
+
+bash
+Copy code
+
+pip install cx-Freeze
+py2exe (faqat Windows uchun)
+
+Windows uchun dasturlarni yaratish vositasi.
+
+
+bash
+Copy code
+ 
+pip install py2exe
+
+python setup.py py2exe
+
+setup.py in{
+from distutils.core import setup
+
+import py2exe
+
+
+setup(console=['{any_app_name.py}'])
+}
